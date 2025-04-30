@@ -1,6 +1,4 @@
 public class lirik_lagu_jokobim {
-    
-    // Fungsi untuk menampilkan satu baris huruf per huruf dengan delay
     public static void tampilkanPerHuruf(String baris, int delayPerHurufMillis) throws InterruptedException {
         for (char huruf : baris.toCharArray()) {
             System.out.print(huruf);
@@ -49,13 +47,10 @@ public class lirik_lagu_jokobim {
         try {
             for (int i = 0; i < irik_lagu_jokobim.length; i++) {
                 if (irik_lagu_jokobim[i].isEmpty()) {
-                    // Jika baris kosong, langsung cetak baris kosong
                     System.out.println();
                 } else {
                     tampilkanPerHuruf(irik_lagu_jokobim[i], delayPerHuruf);
                 }
-
-                // Setelah setiap baris (termasuk baris kosong), delay sesuai
                 if (i < delayAntarBaris.length) {
                     Thread.sleep(delayAntarBaris[i]);
                 }
