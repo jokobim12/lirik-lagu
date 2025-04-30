@@ -1,4 +1,4 @@
-public class lirik_lagu_jokobim {
+public class karna_kamu_cantik {
     public static void tampilkanPerHuruf(String baris, int delayPerHurufMillis) throws InterruptedException {
         for (char huruf : baris.toCharArray()) {
             System.out.print(huruf);
